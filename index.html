@@ -1,28 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ratnesh Kushwaha - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratnesh Kumar Kushwaha - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light gray background */
+            color: #334155; /* Darker text */
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        /* Custom styles for better aesthetics */
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-title {
+            color: #1e293b; /* Slate-900 */
+            border-bottom: 2px solid #6366f1; /* Indigo-500 */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .btn-primary {
+            background-color: #6366f1; /* Indigo-500 */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem; /* rounded-lg */
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #4f46e5; /* Indigo-600 */
+        }
+        .project-item {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px dashed #cbd5e1; /* Slate-300 */
+        }
+        .project-item:last-child {
+            border-bottom: none;
+        }
+        @media (min-width: 768px) {
+            .project-item {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            .project-description {
+                margin-left: 1.5rem;
+            }
+        }
+    </style>
 </head>
-<body>
-  <h1>Ratnesh Kushwaha</h1>
-  <p>Senior Software Engineer | Python | LLM | MLOps | RAG</p>
+<body class="antialiased">
+    <div class="container py-8">
+        <!-- Header Section -->
+        <header class="card text-center mb-8 bg-gradient-to-r from-indigo-500 to-purple-600 text-white p-6">
+            <img src="https://placehold.co/120x120/a78bfa/ffffff?text=RK" alt="Ratnesh's Photo" class="w-28 h-28 rounded-full mx-auto border-4 border-white mb-4 shadow-lg">
+            <h1 class="text-4xl font-bold mb-2">RATNESH KUMAR KUSHWAHA</h1>
+            <p class="text-xl font-light mb-4">BE, ME (Comp. Science) | Senior Software Engineer | LLMs, ML, AI Specialist</p>
+            <nav class="flex justify-center space-x-6">
+                <a href="#summary" class="text-white hover:text-gray-200 transition-colors duration-200">Summary</a>
+                <a href="#skills" class="text-white hover:text-gray-200 transition-colors duration-200">Skills</a>
+                <a href="#experience" class="text-white hover:text-gray-200 transition-colors duration-200">Experience</a>
+                <a href="#projects" class="text-white hover:text-gray-200 transition-colors duration-200">Projects</a>
+                <a href="#education" class="text-white hover:text-gray-200 transition-colors duration-200">Education</a>
+                <a href="#contact" class="text-white hover:text-gray-200 transition-colors duration-200">Contact</a>
+            </nav>
+        </header>
 
-  <h2>Resume</h2>
-  <a href="Resume_Exp_6yrs_Ratnesh_ComputerEngineer_2025.pdf" target="_blank">Download Resume</a>
+        <!-- Summary Section -->
+        <section id="summary" class="card">
+            <h2 class="section-title text-2xl font-semibold">Summary</h2>
+            <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2">
+                <li>6+ years as a Senior Software Engineer specializing in Python, LLMs, and ML, delivering scalable FinTech, Customer engagement, and IoT solutions.</li>
+                <li>Expertise in Flask, Django, LangChain, Ollama, AWS, and deep learning (Keras, TensorFlow) with a focus on NLP and document classification.</li>
+                <li>Proven track record in architecting APIs, mentoring developers, and implementing RAG-based chatbots for enhanced user experiences.</li>
+                <li>Earned Generative AI Certification (Kaggle 2025) and received Performer of the Month award twice at Pace Wisdom for innovative solutions.</li>
+                <li>Overall 10+ years Industry experience worked on Multiple freelance and contract projects.</li>
+                <li>GATE Qualified and 1st division throughout academics.</li>
+            </ul>
+        </section>
 
-  <h2>Projects</h2>
-  <ul>
-    <li><a href="https://github.com/imratnesh/langchain-rag-chatbot">LangChain RAG Chatbot</a></li>
-    <li><a href="https://www.forsocialgood.in/home">Social Good Platform</a></li>
-    <li><a href="https://ratnesh-kushwaha.shinyapps.io/firstshiny/">R Shiny App</a></li>
-  </ul>
+        <!-- Skills Section -->
+        <section id="skills" class="card">
+            <h2 class="section-title text-2xl font-semibold">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-gray-700">
+                <div>
+                    <h3 class="font-semibold text-gray-800">Programming:</h3>
+                    <div class="flex flex-wrap gap-2 mt-1">
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Python</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Scala</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Java</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Spark</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-800">Frameworks:</h3>
+                    <div class="flex flex-wrap gap-2 mt-1">
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Flask</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Django</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">FastAPI</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">LangChain</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Ollama</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Keras</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">TensorFlow</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-800">ML/LLM:</h3>
+                    <div class="flex flex-wrap gap-2 mt-1">
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">NLP</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">RAG</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">FAISS</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Hugging Face</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Transformers</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Sagemaker</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-800">Cloud:</h3>
+                    <div class="flex flex-wrap gap-2 mt-1">
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">AWS (Lambda, S3, EC2, CloudFormation)</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Google Cloud</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Gemini</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-800">Databases:</h3>
+                    <div class="flex flex-wrap gap-2 mt-1">
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">PostgreSQL</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">MongoDB</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Vector Databases</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Hive</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-800">Tools:</h3>
+                    <div class="flex flex-wrap gap-2 mt-1">
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Kafka</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">JIRA</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Docker</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Git</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Tesseract</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">MQTT</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Hadoop</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <h2>Profiles</h2>
-  <ul>
-    <li><a href="https://github.com/imratnesh">GitHub</a></li>
-    <li><a href="https://www.linkedin.com/in/ratneshkushwaha/">LinkedIn</a></li>
-    <li><a href="https://www.kaggle.com/ratnesh88">Kaggle</a></li>
-  </ul>
+        <!-- Experience Section -->
+        <section id="experience" class="card">
+            <h2 class="section-title text-2xl font-semibold">Experience</h2>
+
+            <!-- Pace Wisdom -->
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-800">Senior Software Engineer L2 - Pace Wisdom Pvt. Ltd., Bangalore</h3>
+                <p class="text-gray-600 text-sm mb-2">APRIL 2022 - May 2025</p>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1">
+                    <li>Architected scalable APIs (Flask, Django, FastAPI) and Kafka-based jobs for Appreciate FinTech, reducing latency by 30% and supporting 10K+ daily users.</li>
+                    <li>Developed LLM-powered chatbot using LangChain, Langgraph, and Ollama, improving query resolution accuracy by 25% for compliance and user data retrieval.</li>
+                    <li>Mentored 5 junior developers, boosting team productivity by 15% through Agile practices and code reviews.</li>
+                </ul>
+            </div>
+
+            <!-- Infobeans -->
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-800">Associate Software Engineer - Infobeans, Indore</h3>
+                <p class="text-gray-600 text-sm mb-2">FEB 2021 - JULY 2021</p>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1">
+                    <li>Worked for a client using Python on a Document classification project.</li>
+                    <li>Involved in Third-party API calls related to Maps and PDF processing.</li>
+                    <li>Implemented authentication using OTP and Email. Developed robust, scalable solutions.</li>
+                </ul>
+            </div>
+
+            <!-- High IQ -->
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-800">Solution Architect - High IQ, Hyderabad</h3>
+                <p class="text-gray-600 text-sm mb-2">DEC 2019 - FEB 2021</p>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1">
+                    <li>Developed an end-to-end document classification pipeline using AWS Sagemaker and Keras, achieving 90% accuracy.</li>
+                    <li>Converted 4000 lines of C# utilities to Python, streamlining operations for 10+ clients.</li>
+                </ul>
+            </div>
+
+            <!-- Emorphis -->
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-800">Software Engineer - Emorphis, Indore</h3>
+                <p class="text-gray-600 text-sm mb-2">SEP 2018 - NOV 2019</p>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1">
+                    <li>Worked on an IoT Product as a Python developer.</li>
+                    <li>Applied multithreading concepts and performed Audio classification.</li>
+                </ul>
+            </div>
+
+            <!-- Saras InfoTech -->
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-800">Software Engineer - Saras InfoTech</h3>
+                <p class="text-gray-600 text-sm mb-2">DEC 2014 - AUG 2018</p>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1">
+                    <li>Worked on Java Based projects, Government projects and Private projects.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="card">
+            <h2 class="section-title text-2xl font-semibold">Key Projects</h2>
+
+            <div class="project-item">
+                <div class="flex-shrink-0 w-full md:w-48 mb-4 md:mb-0">
+                    <img src="https://placehold.co/192x108/e0e7ff/6366f1?text=Social+Good" alt="Social Good Website Thumbnail" class="w-full h-auto rounded-md shadow-md">
+                </div>
+                <div class="project-description flex-grow">
+                    <h3 class="text-xl font-semibold text-gray-800">Social Good Website</h3>
+                    <p class="text-gray-600 text-sm mb-2">FastAPI, Postgres, RAG, LLM</p>
+                    <ul class="list-disc list-inside text-gray-700 mb-3 space-y-1">
+                        <li>Built SaaS platform for CSR, connecting 100+ corporates and NGOs with scalable microservices.</li>
+                        <li>Deployed RAG-based chatbot using Ollama, achieving 95% accuracy in regulatory query responses by fine-tuning model.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="URL_OF_SOCIAL_GOOD_WEBSITE_REPO" target="_blank" class="btn-primary text-sm">
+                            View Code
+                        </a>
+                        <a href="URL_OF_SOCIAL_GOOD_WEBSITE_LIVE_DEMO" target="_blank" class="btn-primary text-sm bg-purple-500 hover:bg-purple-600">
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="flex-shrink-0 w-full md:w-48 mb-4 md:mb-0">
+                    <img src="https://placehold.co/192x108/e0e7ff/6366f1?text=Leave+Mgmt" alt="Leave Management System Thumbnail" class="w-full h-auto rounded-md shadow-md">
+                </div>
+                <div class="project-description flex-grow">
+                    <h3 class="text-xl font-semibold text-gray-800">Leave Management System</h3>
+                    <p class="text-gray-600 text-sm mb-2">Django, LLM, FAISS</p>
+                    <ul class="list-disc list-inside text-gray-700 mb-3 space-y-1">
+                        <li>Developed APIs for leave calculations, integrating LangChain chatbot for user-specific data retrieval.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="URL_OF_LEAVE_MGMT_REPO" target="_blank" class="btn-primary text-sm">
+                            View Code
+                        </a>
+                        <!-- If no live demo, you can remove this button -->
+                        <!-- <a href="URL_OF_LEAVE_MGMT_LIVE_DEMO" target="_blank" class="btn-primary text-sm bg-purple-500 hover:bg-purple-600">
+                            Live Demo
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="flex-shrink-0 w-full md:w-48 mb-4 md:mb-0">
+                    <img src="https://placehold.co/192x108/e0e7ff/6366f1?text=Appreciate+App" alt="Appreciate App Thumbnail" class="w-full h-auto rounded-md shadow-md">
+                </div>
+                <div class="project-description flex-grow">
+                    <h3 class="text-xl font-semibold text-gray-800">Appreciate App</h3>
+                    <p class="text-gray-600 text-sm mb-2">Flask, ML, Postgres, Data analytics, Kafka, Pyspark</p>
+                    <ul class="list-disc list-inside text-gray-700 mb-3 space-y-1">
+                        <li>Architected scalable APIs and background jobs for Appreciate FinTech app using Flask, AWS, and Kafka, reducing latency by 30% and supporting 10K daily users.</li>
+                        <li>Developed end-to-end NLP solutions with LangChain and MongoDB, deploying LLMs for churn prediction and sentiment analysis, improving user retention by 20%.</li>
+                        <li>Implemented referral, coupon, and notification systems with network graph analysis, boosting user engagement by 15% on a daily basis.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="URL_OF_APPRECIATE_APP_REPO" target="_blank" class="btn-primary text-sm">
+                            View Code
+                        </a>
+                        <!-- If no live demo, you can remove this button -->
+                        <!-- <a href="URL_OF_APPRECIATE_APP_LIVE_DEMO" target="_blank" class="btn-primary text-sm bg-purple-500 hover:bg-purple-600">
+                            Live Demo
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="flex-shrink-0 w-full md:w-48 mb-4 md:mb-0">
+                    <img src="https://placehold.co/192x108/e0e7ff/6366f1?text=Doc+Class" alt="Intelligent Document Classification Thumbnail" class="w-full h-auto rounded-md shadow-md">
+                </div>
+                <div class="project-description flex-grow">
+                    <h3 class="text-xl font-semibold text-gray-800">Intelligent Document Classification</h3>
+                    <p class="text-gray-600 text-sm mb-2">Python, AWS, ML and AI</p>
+                    <ul class="list-disc list-inside text-gray-700 mb-3 space-y-1">
+                        <li>Served as ML expert, leveraging Tesseract, multithreading, and AWS Sagemaker for OCR, NLP, and document classification projects, enhancing processing efficiency.</li>
+                        <li>Developed an intelligent document classification system using CNN algorithms, enabling accurate PDF processing, labeling, and deployment for streamlined workflows.</li>
+                        <li>Built invoice data processing pipeline with LSTM algorithms, improving classification accuracy for PDF documents by 65%.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="URL_OF_DOC_CLASSIFICATION_REPO" target="_blank" class="btn-primary text-sm">
+                            View Code
+                        </a>
+                        <!-- If no live demo, you can remove this button -->
+                        <!-- <a href="URL_OF_DOC_CLASSIFICATION_LIVE_DEMO" target="_blank" class="btn-primary text-sm bg-purple-500 hover:bg-purple-600">
+                            Live Demo
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="flex-shrink-0 w-full md:w-48 mb-4 md:mb-0">
+                    <img src="https://placehold.co/192x108/e0e7ff/6366f1?text=IoT+Anomaly" alt="IoT Device Anomaly Detection Thumbnail" class="w-full h-auto rounded-md shadow-md">
+                </div>
+                <div class="project-description flex-grow">
+                    <h3 class="text-xl font-semibold text-gray-800">IoT device anomaly detection</h3>
+                    <p class="text-gray-600 text-sm mb-2">Python, Deep learning, Pyspark, Hive</p>
+                    <ul class="list-disc list-inside text-gray-700 mb-3 space-y-1">
+                        <li>IoT Gateway - Device provisioning, MQTT/TCP Communication, PubSub, Topic Predictive Modelling- FFT, Clustering, Anomaly Detection - Autoencoder-PCA, TensorBoard.</li>
+                        <li>Audio Classification using Keras Tensorflow with 95% of accuracy.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="URL_OF_IOT_ANOMALY_REPO" target="_blank" class="btn-primary text-sm">
+                            View Code
+                        </a>
+                        <!-- If no live demo, you can remove this button -->
+                        <!-- <a href="URL_OF_IOT_ANOMALY_LIVE_DEMO" target="_blank" class="btn-primary text-sm bg-purple-500 hover:bg-purple-600">
+                            Live Demo
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="card">
+            <h2 class="section-title text-2xl font-semibold">Education</h2>
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">M.E., Computer Engineering</h3>
+                <p class="text-gray-600 text-base">SGSITS, Indore</p>
+                <p class="text-gray-700 text-sm">CGPA 7.56 | Thesis on Composition of Semantic Web Service on Cloud : A QoS View.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold text-gray-800">B.E., Computer Science</h3>
+                <p class="text-gray-600 text-base">Ujjain Engineering College</p>
+                <p class="text-gray-700 text-sm">Percentage 65.59 | Major Project on Smart City</p>
+            </div>
+        </section>
+
+        <!-- Resume Download Section -->
+        <section class="card text-center">
+            <h2 class="section-title text-2xl font-semibold">Download My Resume</h2>
+            <p class="text-gray-700 mb-4">
+                You can download a PDF version of my detailed resume here:
+            </p>
+            <!-- Important: Replace 'Resume_Exp_6yrs_Ratnesh_ComputerEngineer_2025.pdf' with the actual filename of your PDF resume -->
+            <a href="Resume_Exp_6yrs_Ratnesh_ComputerEngineer_2025.pdf" download="Ratnesh_Kumar_Kushwaha_Resume.pdf" class="btn-primary inline-block">
+                Download Resume (PDF)
+            </a>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="card">
+            <h2 class="section-title text-2xl font-semibold">Contact Me</h2>
+            <p class="text-gray-700 mb-4">
+                Feel free to reach out to me via email or connect with me on social media.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="mailto:ratnesh.kush@yahoo.in" class="btn-primary flex items-center justify-center space-x-2">
+                    <!-- Basic email icon (inline SVG for simplicity) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    <span>Email Me</span>
+                </a>
+                <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank" class="btn-primary flex items-center justify-center space-x-2 bg-blue-600 hover:bg-blue-700">
+                    <!-- Basic LinkedIn icon (inline SVG for simplicity) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/yourgithubprofile" target="_blank" class="btn-primary flex items-center justify-center space-x-2 bg-gray-800 hover:bg-gray-900">
+                    <!-- Basic GitHub icon (inline SVG for simplicity) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 3c-.58-.33-1.41-.67-2.73-.67H16v6z"></path></svg>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://stackoverflow.com/users/yourstackoverflowprofile" target="_blank" class="btn-primary flex items-center justify-center space-x-2 bg-orange-600 hover:bg-orange-700">
+                    <!-- Basic Stack Overflow icon (inline SVG for simplicity) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6"></path><path d="M12 20v-8m-4 4h8"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                    <span>Stack Overflow</span>
+                </a>
+                <a href="https://www.kaggle.com/yourkaggleprofile" target="_blank" class="btn-primary flex items-center justify-center space-x-2 bg-blue-800 hover:bg-blue-900">
+                    <!-- Basic Kaggle icon (inline SVG for simplicity) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10s-2.17-1.44-4-2c-1.83-.56-4-1-6-1-2 0-3.83.44-5.5 1S2 10 2 10"></path><path d="M22 14s-2.17 1.44-4 2c-1.83.56-4 1-6 1-2 0-3.83-.44-5.5-1S2 14 2 14"></path><path d="M22 12s-2.17-1.44-4-2c-1.83-.56-4-1-6-1-2 0-3.83.44-5.5 1S2 12 2 12"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                    <span>Kaggle</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="text-center text-gray-500 text-sm mt-8">
+            <p>&copy; 2025 Ratnesh Kumar Kushwaha. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
