@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,73 +11,98 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f0f4f8; /* Light gray background */
-            color: #334155; /* Darker text */
+            background-color: #f0f4f8;
+            /* Light gray background */
+            color: #334155;
+            /* Darker text */
         }
+
         .container {
             max-width: 960px;
             margin: 0 auto;
             padding: 2rem;
         }
+
         /* Custom styles for better aesthetics */
         .card {
             background-color: #ffffff;
-            border-radius: 0.75rem; /* rounded-xl */
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+            border-radius: 0.75rem;
+            /* rounded-xl */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            /* shadow-xl */
             padding: 1.5rem;
             margin-bottom: 1.5rem;
         }
+
         .section-title {
-            color: #1e293b; /* Slate-900 */
-            border-bottom: 2px solid #6366f1; /* Indigo-500 */
+            color: #1e293b;
+            /* Slate-900 */
+            border-bottom: 2px solid #6366f1;
+            /* Indigo-500 */
             padding-bottom: 0.5rem;
             margin-bottom: 1.5rem;
         }
+
         .btn-primary {
-            background-color: #6366f1; /* Indigo-500 */
+            background-color: #6366f1;
+            /* Indigo-500 */
             color: white;
             padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem; /* rounded-lg */
+            border-radius: 0.5rem;
+            /* rounded-lg */
             text-decoration: none;
             transition: background-color 0.3s ease;
         }
+
         .btn-primary:hover {
-            background-color: #4f46e5; /* Indigo-600 */
+            background-color: #4f46e5;
+            /* Indigo-600 */
         }
+
         .project-item {
             display: flex;
             flex-direction: column;
             margin-bottom: 1rem;
             padding-bottom: 1rem;
-            border-bottom: 1px dashed #cbd5e1; /* Slate-300 */
+            border-bottom: 1px dashed #cbd5e1;
+            /* Slate-300 */
         }
+
         .project-item:last-child {
             border-bottom: none;
         }
+
         @media (min-width: 768px) {
             .project-item {
                 flex-direction: row;
                 align-items: flex-start;
             }
+
             .project-description {
                 margin-left: 1.5rem;
             }
         }
     </style>
 </head>
+
 <body class="antialiased">
     <div class="container py-8">
         <!-- Header Section -->
         <header class="card text-center mb-8 bg-gradient-to-r from-indigo-500 to-purple-600 text-white p-6">
-<!--            <img src="https://placehold.co/120x120/a78bfa/ffffff?text=RK" alt="Ratnesh's Photo" class="w-28 h-28 rounded-full mx-auto border-4 border-white mb-4 shadow-lg">-->
+            <!--            <img src="https://placehold.co/120x120/a78bfa/ffffff?text=RK" alt="Ratnesh's Photo" class="w-28 h-28 rounded-full mx-auto border-4 border-white mb-4 shadow-lg">-->
             <h1 class="text-4xl font-bold mb-2">RATNESH KUMAR KUSHWAHA</h1>
-            <p class="text-xl font-light mb-4">BE, ME (Comp. Science) | Senior Software Engineer | LLMs, ML, AI, APIs Developer</p>
+            <p class="text-xl font-light mb-2">Senior Software Engineer | Lead LLM / GEN AI Engineer</p>
+            <span
+                class="inline-block bg-green-500 text-white text-xs px-2 py-1 rounded-full uppercase tracking-wide font-semibold mb-4">Immediate
+                Joiner</span>
             <nav class="flex justify-center space-x-6">
                 <a href="#summary" class="text-white hover:text-gray-200 transition-colors duration-200">Summary</a>
                 <a href="#skills" class="text-white hover:text-gray-200 transition-colors duration-200">Skills</a>
+                <a href="#experience"
+                    class="text-white hover:text-gray-200 transition-colors duration-200">Experience</a>
                 <a href="#projects" class="text-white hover:text-gray-200 transition-colors duration-200">Projects</a>
-                <a href="#experience" class="text-white hover:text-gray-200 transition-colors duration-200">Experience</a>
-                <a href="#edu-certifications" class="text-white hover:text-gray-200 transition-colors duration-200">Education & Certifications</a>
+                <a href="#edu-certifications"
+                    class="text-white hover:text-gray-200 transition-colors duration-200">Education</a>
                 <a href="#contact" class="text-white hover:text-gray-200 transition-colors duration-200">Contact</a>
             </nav>
         </header>
@@ -84,73 +110,145 @@
         <section id="summary" class="card">
             <h2 class="section-title text-2xl font-semibold">Summary</h2>
             <p class="text-gray-700 leading-relaxed">
-                Senior Software Engineer with 6+ years of experience specializing in Python, LLMs, ML, and audio AI, delivering scalable FinTech, customer engagement, and IoT solutions. Expert in Flask, Django, LangChain, Ollama, AWS, and deep learning (Keras, TensorFlow), with a focus on NLP, document classification, and audio processing. Proven track record in architecting APIs, mentoring developers, and implementing RAG-based chatbots for enhanced user experiences. Earned Generative AI Certification (Kaggle 2025) and received Performer of the Month award twice at Pace Wisdom for innovative solutions. Over 10 years of industry experience, including freelance and contract projects. GATE qualified and consistently achieved first division throughout academics.
+                Senior Software Engineer with 6+ years of experience in scalable microservices, Python, Data Science,
+                Generative AI, and FastAPI/Django. Hands-on expertise with Huggingface, OpenAI, AWS, Agentic AI, RAGA,
+                MCP and vector databases. Delivered LLM-powered projects using LangChain/LangGraph for
+                retrieval-augmented generation, multi-agent orchestration, and tool integration. Designed FinTech Kafka
+                pipelines reducing latency by 30% and built fault-tolerant, high-performance data and API systems on
+                AWS/GCP. Skilled in multi-AI agent architectures, technical leadership, code reviews, and mentoring
+                teams for scalable delivery.
             </p>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="card">
+            <h2 class="section-title text-2xl font-semibold">Contact Me</h2>
+            <p class="text-gray-700 mb-4">
+                Feel free to reach out to me via email or connect with me on social media.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 flex-wrap">
+                <a href="mailto:ratnesh.kush@yahoo.in"
+                    class="btn-primary flex items-center justify-center space-x-2 bg-purple-600 hover:bg-purple-700">
+                    <img src="https://unpkg.com/simple-icons@latest/icons/gmail.svg" alt="Yahoo Mail"
+                        class="w-5 h-5 brightness-0 invert">
+                    <span>Email Me</span>
+                </a>
+                <a href="https://www.linkedin.com/in/ratneshkushwaha/" target="_blank"
+                    class="btn-primary flex items-center justify-center space-x-2 bg-blue-600 hover:bg-blue-700">
+                    <img src="https://unpkg.com/simple-icons@latest/icons/gnusocial.svg" alt="LinkedIn"
+                        class="w-5 h-5 brightness-0 invert">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/imratnesh" target="_blank"
+                    class="btn-primary flex items-center justify-center space-x-2 bg-gray-800 hover:bg-gray-900">
+                    <img src="https://unpkg.com/simple-icons@latest/icons/github.svg" alt="GitHub"
+                        class="w-5 h-5 brightness-0 invert">
+                    <span>GitHub</span>
+                </a>
+                <a href="https://stackoverflow.com/users/2094351/ratnesh-kushwaha" target="_blank"
+                    class="btn-primary flex items-center justify-center space-x-2 bg-orange-600 hover:bg-orange-700">
+                    <img src="https://unpkg.com/simple-icons@latest/icons/stackoverflow.svg" alt="Stack Overflow"
+                        class="w-5 h-5 brightness-0 invert">
+                    <span>Stack Overflow</span>
+                </a>
+                <a href="https://www.kaggle.com/ratnesh88" target="_blank"
+                    class="btn-primary flex items-center justify-center space-x-2 bg-blue-500 hover:bg-blue-600">
+                    <img src="https://unpkg.com/simple-icons@latest/icons/kaggle.svg" alt="Kaggle"
+                        class="w-5 h-5 brightness-0 invert">
+                    <span>Kaggle</span>
+                </a>
+                <a href="https://ollama.com/imratnesh/ratnesh-bot" target="_blank"
+                    class="btn-primary flex items-center justify-center space-x-2 bg-gray-900 hover:bg-black">
+                    <img src="https://unpkg.com/simple-icons@latest/icons/ollama.svg" alt="Ollama"
+                        class="w-5 h-5 brightness-0 invert">
+                    <span>Ollama</span>
+                </a>
+            </div>
         </section>
         <!-- Skills Section -->
         <section id="skills" class="card">
             <h2 class="section-title text-2xl font-semibold">Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-gray-700">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">
                 <div>
-                    <h3 class="font-semibold text-gray-800">Programming:</h3>
+                    <h3 class="font-semibold text-gray-800">Languages/Frameworks:</h3>
                     <div class="flex flex-wrap gap-2 mt-1">
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Python</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Scala</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Java</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Spark</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Python</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Flask</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Django</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">FastAPI</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Streamlit</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Gradio</span>
                     </div>
                 </div>
                 <div>
-                    <h3 class="font-semibold text-gray-800">Frameworks:</h3>
+                    <h3 class="font-semibold text-gray-800">ML & GenAI:</h3>
                     <div class="flex flex-wrap gap-2 mt-1">
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Flask</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Django</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">FastAPI</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">LangChain</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Ollama</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Keras</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Streamit</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">TensorFlow</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">TensorFlow</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Scikit-learn</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">HuggingFace</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">LangChain</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">LangGraph</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">PEFT</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">RAG</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">OpenAI</span>
                     </div>
                 </div>
                 <div>
-                    <h3 class="font-semibold text-gray-800">ML/LLM:</h3>
+                    <h3 class="font-semibold text-gray-800">Data Tools:</h3>
                     <div class="flex flex-wrap gap-2 mt-1">
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">NLP</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">RAG</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">FAISS</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Hugging Face</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Transformers</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Sagemaker</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Pandas</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">NumPy</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Postgres</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">MongoDB</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Redis</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">ChromaDB</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">FAISS</span>
                     </div>
                 </div>
                 <div>
-                    <h3 class="font-semibold text-gray-800">Cloud:</h3>
+                    <h3 class="font-semibold text-gray-800">Cloud & DevOps:</h3>
                     <div class="flex flex-wrap gap-2 mt-1">
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">AWS (Lambda, S3, EC2, CloudFormation)</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Google Cloud</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Gemini</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">AWS
+                            (Bedrock, Lambda, Sagemaker)</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Gemini
+                            ADK</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Docker</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Git</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">CI/CD</span>
                     </div>
                 </div>
                 <div>
-                    <h3 class="font-semibold text-gray-800">Databases:</h3>
+                    <h3 class="font-semibold text-gray-800">Others:</h3>
                     <div class="flex flex-wrap gap-2 mt-1">
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">PostgreSQL</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">MongoDB</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Vector Databases</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Hive</span>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="font-semibold text-gray-800">Tools:</h3>
-                    <div class="flex flex-wrap gap-2 mt-1">
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Kafka</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">JIRA</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Docker</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Git</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Tesseract</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">MQTT</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Hadoop</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Agile/Scrum</span>
+                        <span
+                            class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">JIRA</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Spark
+                            SQL</span>
                     </div>
                 </div>
             </div>
@@ -159,198 +257,135 @@
         <!-- Projects Section -->
         <section id="projects" class="card">
             <h2 class="section-title text-2xl font-semibold">Key Projects</h2>
-            <!-- Social Good Website -->
-            <div class="project-item">
-                <div class="flex-shrink-0 w-full md:w-48 mb-4 md:mb-0">
-                    <img src="https://placehold.co/192x108/e0e7ff/6366f1?text=Social+Good" alt="Social Good Website Thumbnail" class="w-full h-auto rounded-md shadow-md">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Text-to-SQL Chatbot -->
+                <div class="project-item bg-gray-50 p-4 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Text-to-SQL Chatbot</h4>
+                    <p class="text-gray-600 text-sm mb-2">LLM, RAG, RAGAS, Gradio</p>
+                    <p class="text-gray-700 text-sm mb-3">
+                        Implemented prompt-engineered and fine-tuned LLMs to convert natural language queries into SQL.
+                        developed RAG-based pipeline with 83% accuracy. Integrated with Gradio interface.
+                    </p>
                 </div>
-                <div class="project-description flex-grow">
-                    <h3 class="text-xl font-semibold text-gray-800">Social Good Website</h3>
+
+                <!-- Transcript processing project -->
+                <div class="project-item bg-gray-50 p-4 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Transcript processing project</h4>
+                    <p class="text-gray-600 text-sm mb-2">Cohere, GPT, Async Pipeline</p>
+                    <p class="text-gray-700 text-sm mb-3">
+                        End-to-end asynchronous pipeline converting raw PDFs into clean JSON using Cohere/GPT models.
+                        Supports concurrent processing and streaming responses.
+                    </p>
+                </div>
+
+                <!-- Voice AI -->
+                <div class="project-item bg-gray-50 p-4 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Voice AI Agent</h4>
+                    <p class="text-gray-600 text-sm mb-2">Voice AI, LLM, Agent, FastAPI, Streamlit</p>
+                    <p class="text-gray-700 text-sm mb-3">
+                        End-to-end Voice AI system for speech-to-text, intent recognition, and real-time audio
+                        processing using local Ollama model.
+                    </p>
+                    <a href="https://github.com/imratnesh/advance_audio_agent" target="_blank"
+                        class="btn-primary text-sm bg-purple-500 hover:bg-purple-600">
+                        View Code
+                    </a>
+                </div>
+
+                <!-- Social Good Website -->
+                <div class="project-item bg-gray-50 p-4 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Social Good Website</h4>
                     <p class="text-gray-600 text-sm mb-2">FastAPI, Postgres, RAG, LLM</p>
-                    <ul class="list-disc list-inside text-gray-700 mb-3 space-y-1">
-                        <li>Built SaaS platform for CSR, connecting 100+ corporates and NGOs with scalable microservices.</li>
-                        <li>Deployed RAG-based chatbot using Ollama, achieving 95% accuracy in regulatory query responses by fine-tuning model.</li>
-                    </ul>
-                    <!-- <div class="flex flex-wrap gap-2">
-                        <a href="https://github.com/imratnesh/Social-Good-Website-Repo" target="_blank" class="btn-primary text-sm">
-                            View Code
-                        </a>
-                    </div> -->
+                    <p class="text-gray-700 text-sm mb-3">
+                        RAG pipeline using Ollama/HuggingFace with 95% accuracy. Integrated finetuning, caching, and
+                        fault-tolerant evaluation.
+                    </p>
+                </div>
+
+                <!-- Leave Management System -->
+                <div class="project-item bg-gray-50 p-4 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Leave Management System</h4>
+                    <p class="text-gray-600 text-sm mb-2">Django, LLM, LangChain</p>
+                    <p class="text-gray-700 text-sm mb-3">
+                        Rule-based engine + LangChain chatbot for natural language leave queries.
+                    </p>
+                </div>
+
+                <!-- Appreciate App -->
+                <div class="project-item bg-gray-50 p-4 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Appreciate App</h4>
+                    <p class="text-gray-600 text-sm mb-2">Flask, ML, Kafka, MongoDB</p>
+                    <p class="text-gray-700 text-sm mb-3">
+                        Built ML pipeline for churn/engagement. Delivered 65% increase in client engagement.
+                    </p>
+                </div>
+
+                <!-- Intelligent Document Classification -->
+                <div class="project-item bg-gray-50 p-4 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Intelligent Document Classification</h4>
+                    <p class="text-gray-600 text-sm mb-2">SageMaker, CNN, Tesseract</p>
+                    <p class="text-gray-700 text-sm mb-3">
+                        OCR + CNN pipeline for PDF classification (85% accuracy). Deployed using SageMaker.
+                    </p>
+                </div>
+
+                <!-- IoT device anomaly detection -->
+                <div class="project-item bg-gray-50 p-4 rounded-lg shadow-sm">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">IoT Anomaly Detection</h4>
+                    <p class="text-gray-600 text-sm mb-2">TensorFlow, Pyspark, AES</p>
+                    <p class="text-gray-700 text-sm mb-3">
+                        Real-time MQTT/TCP stream ingestion with Autoencoder-PCA models.
+                    </p>
                 </div>
             </div>
-
-            <!-- Leave Management System -->
-            <div class="project-item">
-                <div class="flex-shrink-0 w-full md:w-48 mb-4 md:mb-0">
-                    <img src="https://placehold.co/192x108/e0e7ff/6366f1?text=Leave+Mgmt" alt="Leave Management System Thumbnail" class="w-full h-auto rounded-md shadow-md">
-                </div>
-                <div class="project-description flex-grow">
-                    <h3 class="text-xl font-semibold text-gray-800">Leave Management System</h3>
-                    <p class="text-gray-600 text-sm mb-2">Django, LLM, FAISS</p>
-                    <ul class="list-disc list-inside text-gray-700 mb-3 space-y-1">
-                        <li>Developed APIs for leave calculations, integrating LangChain chatbot for user-specific data retrieval.</li>
-                    </ul>
-                    <!-- <div class="flex flex-wrap gap-2">
-                        <a href="https://github.com/imratnesh/Leave-Management-System-Repo" target="_blank" class="btn-primary text-sm">
-                            View Code
-                        </a>
-                    </div> -->
-                </div>
+            <div class="mt-4 text-center">
+                <p class="text-sm text-gray-600">Other Projects: <a
+                        href="https://github.com/imratnesh/ragchecker_local_run_custom_llm"
+                        class="text-indigo-600 underline">RAG Checker</a>, <a
+                        href="https://github.com/imratnesh/pdf_qa_langgraph" class="text-indigo-600 underline">PDF QA
+                        LangGraph</a>, <a href="https://github.com/imratnesh/pyspark-pipeline"
+                        class="text-indigo-600 underline">PySpark Pipeline</a></p>
             </div>
-
-            <!-- Appreciate App -->
-            <div class="project-item">
-                <div class="flex-shrink-0 w-full md:w-48 mb-4 md:mb-0">
-                    <img src="https://placehold.co/192x108/e0e7ff/6366f1?text=Appreciate+App" alt="Appreciate App Thumbnail" class="w-full h-auto rounded-md shadow-md">
-                </div>
-                <div class="project-description flex-grow">
-                    <h3 class="text-xl font-semibold text-gray-800">Appreciate App</h3>
-                    <p class="text-gray-600 text-sm mb-2">Flask, ML, Postgres, Data analytics, Kafka, Pyspark</p>
-                    <ul class="list-disc list-inside text-gray-700 mb-3 space-y-1">
-                        <li>Architected scalable APIs and background jobs for Appreciate FinTech app using Flask, AWS, and Kafka, reducing latency by 30% and supporting 10K daily users.</li>
-                        <li>Developed end-to-end NLP solutions with LangChain and MongoDB, deploying LLMs for churn prediction and sentiment analysis, improving user retention by 20%.</li>
-                        <li>Implemented referral, coupon, and notification systems with network graph analysis, boosting user engagement by 15% on a daily basis.</li>
-                    </ul>
-                    <!-- <div class="flex flex-wrap gap-2">
-                        <a href="https://github.com/imratnesh/Appreciate-App-Repo" target="_blank" class="btn-primary text-sm">
-                            View Code
-                        </a>
-                    </div> -->
-                </div>
-            </div>
-
-            <!-- Intelligent Document Classification -->
-            <div class="project-item">
-                <div class="flex-shrink-0 w-full md:w-48 mb-4 md:mb-0">
-                    <img src="https://placehold.co/192x108/e0e7ff/6366f1?text=Doc+Class" alt="Intelligent Document Classification Thumbnail" class="w-full h-auto rounded-md shadow-md">
-                </div>
-                <div class="project-description flex-grow">
-                    <h3 class="text-xl font-semibold text-gray-800">Intelligent Document Classification</h3>
-                    <p class="text-gray-600 text-sm mb-2">Python, AWS, ML and AI</p>
-                    <ul class="list-disc list-inside text-gray-700 mb-3 space-y-1">
-                        <li>Served as ML expert, leveraging Tesseract, multithreading, and AWS Sagemaker for OCR, NLP, and document classification projects, enhancing processing efficiency.</li>
-                        <li>Developed an intelligent document classification system using CNN algorithms, enabling accurate PDF processing, labeling, and deployment for streamlined workflows.</li>
-                        <li>Built invoice data processing pipeline with LSTM algorithms, improving classification accuracy for PDF documents by 65%.</li>
-                    </ul>
-                    <!-- <div class="flex flex-wrap gap-2">
-                        <a href="https://github.com/imratnesh/Intelligent-Document-Classification-Repo" target="_blank" class="btn-primary text-sm">
-                            View Code
-                        </a>
-                    </div> -->
-                </div>
-            </div>
-
-            <!-- IoT device anomaly detection -->
-            <div class="project-item">
-                <div class="flex-shrink-0 w-full md:w-48 mb-4 md:mb-0">
-                    <img src="https://placehold.co/192x108/e0e7ff/6366f1?text=IoT+Anomaly" alt="IoT Device Anomaly Detection Thumbnail" class="w-full h-auto rounded-md shadow-md">
-                </div>
-                <div class="project-description flex-grow">
-                    <h3 class="text-xl font-semibold text-gray-800">IoT device anomaly detection</h3>
-                    <p class="text-gray-600 text-sm mb-2">Python, Deep learning, Pyspark, Hive</p>
-                    <ul class="list-disc list-inside text-gray-700 mb-3 space-y-1">
-                        <li>IoT Gateway - Device provisioning, MQTT/TCP Communication, PubSub, Topic Predictive Modelling- FFT, Clustering, Anomaly Detection - Autoencoder-PCA, TensorBoard.</li>
-                        <li>Audio Classification using Keras Tensorflow with 95% of accuracy.</li>
-                    </ul>
-                    <!-- <div class="flex flex-wrap gap-2">
-                        <a href="https://github.com/imratnesh/IoT-Device-Anomaly-Detection-Repo" target="_blank" class="btn-primary text-sm">
-                            View Code
-                        </a>
-                    </div> -->
-                </div>
-            </div>
-    <!-- Highlighted LLM, PySpark, RAG & Voice AI Projects -->
-    <h3 class="text-xl font-semibold text-gray-800 mt-0 mb-4 section-title">Highlighted LLM, PySpark, Voice AI & RAG Projects</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="project-item bg-gray-50 p-4 rounded-lg shadow-sm">
-            <h4 class="text-lg font-semibold text-gray-800 mb-2">Voice AI</h4>
-            <p class="text-gray-600 text-sm mb-2">Voice AI, LLM, Agent</p>
-            <p class="text-gray-700 text-sm mb-3">
-                End-to-end Voice AI system for speech-to-text, intent recognition, and real-time audio processing using state-of-the-art models and LLM integration.
-            </p>
-            <a href="https://github.com/imratnesh/advance_audio_agent" target="_blank" class="btn-primary text-sm bg-purple-500 hover:bg-purple-600">
-                View Code
-            </a>
-        </div>
-        <div class="project-item bg-gray-50 p-4 rounded-lg shadow-sm">
-            <h4 class="text-lg font-semibold text-gray-800 mb-2">PySpark Pipeline</h4>
-            <p class="text-gray-600 text-sm mb-2">PySpark, Data Processing, ETL</p>
-            <p class="text-gray-700 text-sm mb-3">
-                A robust data processing pipeline built with PySpark for efficient ETL operations on large datasets. Focuses on scalable data transformations and analysis.
-            </p>
-            <a href="https://github.com/imratnesh/pyspark-pipeline" target="_blank" class="btn-primary text-sm bg-purple-500 hover:bg-purple-600">
-                View Code
-            </a>
-        </div>
-        <div class="project-item bg-gray-50 p-4 rounded-lg shadow-sm">
-            <h4 class="text-lg font-semibold text-gray-800 mb-2">RAG Checker with Custom LLM</h4>
-            <p class="text-gray-600 text-sm mb-2">RAG, LLM, Custom Models</p>
-            <p class="text-gray-700 text-sm mb-3">
-                Exploration of Retrieval Augmented Generation (RAG) using locally run custom LLMs. This project focuses on improving response accuracy and relevance through dynamic information retrieval.
-            </p>
-            <a href="https://github.com/imratnesh/ragchecker_local_run_custom_llm" target="_blank" class="btn-primary text-sm bg-purple-500 hover:bg-purple-600">
-                View Code
-            </a>
-        </div>
-        <div class="project-item bg-gray-50 p-4 rounded-lg shadow-sm">
-            <h4 class="text-lg font-semibold text-gray-800 mb-2">PDF QA using LangGraph</h4>
-            <p class="text-gray-600 text-sm mb-2">LLM, LangGraph, PDF Processing</p>
-            <p class="text-gray-700 text-sm mb-3">
-                An application demonstrating question-answering capabilities on PDF documents, leveraging LangGraph for complex conversational flows and LLMs for information extraction.
-            </p>
-            <a href="https://github.com/imratnesh/pdf_qa_langgraph" target="_blank" class="btn-primary text-sm bg-purple-500 hover:bg-purple-600">
-                View Code
-            </a>
-        </div>
-        <div class="project-item bg-gray-50 p-4 rounded-lg shadow-sm">
-            <h4 class="text-lg font-semibold text-gray-800 mb-2">RAG Demo</h4>
-            <p class="text-gray-600 text-sm mb-2">RAG, LLM Integration</p>
-            <p class="text-gray-700 text-sm mb-3">
-                A foundational demonstration of the Retrieval Augmented Generation (RAG) pattern, showcasing how external knowledge can be seamlessly integrated with LLM responses.
-            </p>
-            <a href="https://github.com/imratnesh/rag_demo" target="_blank" class="btn-primary text-sm bg-purple-500 hover:bg-purple-600">
-                View Code
-            </a>
-        </div>
-<!--        <div class="project-item bg-gray-50 p-4 rounded-lg shadow-sm">-->
-<!--            <h4 class="text-lg font-semibold text-gray-800 mb-2">LLM Ops</h4>-->
-<!--            <p class="text-gray-600 text-sm mb-2">LLM, MLOps, Deployment</p>-->
-<!--            <p class="text-gray-700 text-sm mb-3">-->
-<!--                A project focused on the operationalization of Large Language Models (LLMs), covering aspects like deployment, monitoring, and versioning for LLM-powered applications.-->
-<!--            </p>-->
-<!--            <a href="https://github.com/imratnesh/llmops" target="_blank" class="btn-primary text-sm bg-purple-500 hover:bg-purple-600">-->
-<!--                View Code-->
-<!--            </a>-->
-<!--        </div>-->
-        <div class="project-item bg-gray-50 p-4 rounded-lg shadow-sm">
-            <h4 class="text-lg font-semibold text-gray-800 mb-2">RAG AI Agent</h4>
-            <p class="text-gray-600 text-sm mb-2">RAG, AI Agent, Advanced LLM</p>
-            <p class="text-gray-700 text-sm mb-3">
-                Development of an AI agent utilizing the RAG paradigm to enhance its knowledge base and reasoning capabilities for more complex and accurate interactions.
-            </p>
-            <a href="https://github.com/imratnesh/rag_ai_agent" target="_blank" class="btn-primary text-sm bg-purple-500 hover:bg-purple-600">
-                View Code
-            </a>
-        </div>
-    </div>
-
-    <!-- Main Project List (keep as is, below the highlighted section) -->
-    <!-- ...existing main project items... -->
-</section>
-
+        </section>
 
         <!-- Experience Section -->
         <section id="experience" class="card">
             <h2 class="section-title text-2xl font-semibold">Experience</h2>
 
+            <!-- Star Co. -->
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-800">Lead LLM / GEN AI Engineer - Star Co., Hyderabad</h3>
+                <p class="text-gray-600 text-sm mb-2">AUG 2025 - DEC 2025</p>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1">
+                    <li>Designed and implemented document automation solutions, RAG-based chatbots, and end-to-end
+                        generative AI pipelines.</li>
+                    <li>Developed workflows for Transcript/PDF/MTR processing with robust parsing and chunking.</li>
+                    <li>Led prompt engineering, Text-to-SQL fine-tuning, and RAGAS-based evaluation.</li>
+                    <li>Developed internal tooling (TOON) and Streamlit/Gradio apps.</li>
+                </ul>
+            </div>
+
             <!-- Pace Wisdom -->
             <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-                <h3 class="text-xl font-semibold text-gray-800">Senior Software Engineer L2 - Pace Wisdom Pvt. Ltd., Bangalore</h3>
+                <h3 class="text-xl font-semibold text-gray-800">Senior Software Engineer - Pace Wisdom Pvt. Ltd.,
+                    Bangalore</h3>
                 <p class="text-gray-600 text-sm mb-2">APRIL 2022 - May 2025</p>
                 <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1">
-                    <li>Architected scalable APIs (Flask, Django, FastAPI) and Kafka-based jobs for Appreciate FinTech, reducing latency by 30% and supporting 10K+ daily users.</li>
-                    <li>Developed LLM-powered chatbot using LangChain, Langgraph, and Ollama, improving query resolution accuracy by 25% for compliance and user data retrieval.</li>
-                    <li>Mentored 5 junior developers, boosting team productivity by 15% through Agile practices and code reviews.</li>
+                    <li>Led development of LLM-powered agent-based chatbots using LangChain, Ollama, AWS Bedrock.</li>
+                    <li>Architected FinTech Kafka pipelines reducing latency by 30%.</li>
+                    <li>Delivered scalable microservices (Flask/Django), mentored team of 5, boosting productivity by
+                        55%.</li>
+                </ul>
+            </div>
+
+            <!-- Azilen Technologies -->
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-800">Contract Application Developer - Azilen Technologies
+                    Pvt. Ltd.</h3>
+                <p class="text-gray-600 text-sm mb-2">JULY 2021 - DEC 2021</p>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1">
+                    <li>Migrated healthcare analytics platform from Scala to Python.</li>
+                    <li>Developed RESTful APIs and optimized data processing pipelines.</li>
                 </ul>
             </div>
 
@@ -359,9 +394,8 @@
                 <h3 class="text-xl font-semibold text-gray-800">Associate Software Engineer - Infobeans, Indore</h3>
                 <p class="text-gray-600 text-sm mb-2">FEB 2021 - JULY 2021</p>
                 <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1">
-                    <li>Worked for a client using Python on a Document classification project.</li>
-                    <li>Involved in Third-party API calls related to Maps and PDF processing.</li>
-                    <li>Implemented authentication using OTP and Email. Developed robust, scalable solutions.</li>
+                    <li>Built secure NLP-based document classification APIs with email/OTP authentication.</li>
+                    <li>Implemented preprocessing pipelines and Hive-backed storage.</li>
                 </ul>
             </div>
 
@@ -370,8 +404,8 @@
                 <h3 class="text-xl font-semibold text-gray-800">Solution Architect - High IQ, Hyderabad</h3>
                 <p class="text-gray-600 text-sm mb-2">DEC 2019 - FEB 2021</p>
                 <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1">
-                    <li>Developed an end-to-end document classification pipeline using AWS Sagemaker and Keras, achieving 90% accuracy.</li>
-                    <li>Converted 4000 lines of C# utilities to Python, streamlining operations for 10+ clients.</li>
+                    <li>Engineered OCR + CNN-powered PDF classifier on AWS SageMaker (90% accuracy).</li>
+                    <li>Converted 4000 lines of C# utilities to Python.</li>
                 </ul>
             </div>
 
@@ -380,17 +414,17 @@
                 <h3 class="text-xl font-semibold text-gray-800">Software Engineer - Emorphis, Indore</h3>
                 <p class="text-gray-600 text-sm mb-2">SEP 2018 - NOV 2019</p>
                 <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1">
-                    <li>Worked on an IoT Product as a Python developer.</li>
-                    <li>Applied multithreading concepts and performed Audio classification.</li>
+                    <li>Developed multithreaded Python pipelines for IoT signal analysis.</li>
+                    <li>Built TensorFlow-based predictive services (Audio classification).</li>
                 </ul>
             </div>
 
             <!-- Saras InfoTech -->
             <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-                <h3 class="text-xl font-semibold text-gray-800">Software Engineer - Saras InfoTech</h3>
+                <h3 class="text-xl font-semibold text-gray-800">Independent Consultant - Saras InfoTech</h3>
                 <p class="text-gray-600 text-sm mb-2">DEC 2014 - AUG 2018</p>
                 <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1">
-                    <li>Worked on Java Based projects, Government projects and Private projects.</li>
+                    <li>Delivered full-stack municipal portals (GRS/UMC). Designed custom ETL pipelines.</li>
                 </ul>
             </div>
         </section>
@@ -405,7 +439,8 @@
                     <div class="mb-4">
                         <h4 class="text-lg font-semibold text-gray-800">M.E., Computer Engineering</h4>
                         <p class="text-gray-600 text-base">SGSITS, Indore</p>
-                        <p class="text-gray-700 text-sm">CGPA 7.56 | Thesis on Composition of Semantic Web Service on Cloud : A QoS View.</p>
+                        <p class="text-gray-700 text-sm">CGPA 7.56 | Thesis on Composition of Semantic Web Service on
+                            Cloud : A QoS View.</p>
                     </div>
                     <div>
                         <h4 class="text-lg font-semibold text-gray-800">B.E., Computer Science</h4>
@@ -417,15 +452,19 @@
                 <!-- Certifications Sub-section -->
                 <div class="flex-1">
                     <h3 class="text-xl font-semibold text-gray-800 mb-4">Certifications</h3>
-                    <p class="text-gray-700 mb-4">
-                        You can view my professional certifications on my LinkedIn profile:
-                    </p>
-                    <a href="https://www.linkedin.com/in/ratneshkushwaha/details/certifications/" target="_blank" class="btn-primary inline-block">
-                        View Certifications on LinkedIn
+                    <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1 mb-4">
+                        <li>Introduction to Model Context Protocol (Anthropic)</li>
+                        <li>5-Day AI Agents Intensive Course with Google</li>
+                        <li>Building RAG Agents with LLMs (NVIDIA)</li>
+                        <li>Big Data Hadoop & Spark (Udemy)</li>
+                        <li>5-Day Gen AI Course (Kaggle)</li>
+                        <li>Problem Solving (HackerRank)</li>
+                        <li>Android Workshop (Techfest, IIT Bombay)</li>
+                    </ul>
+                    <a href="https://www.linkedin.com/in/ratneshkushwaha/details/certifications/" target="_blank"
+                        class="btn-primary inline-block">
+                        View via LinkedIn
                     </a>
-                    <p class="text-gray-700 mt-4">
-                        *Notably, I earned the Generative AI Certification (Kaggle 2025).*
-                    </p>
                 </div>
             </div>
         </section>
@@ -436,50 +475,19 @@
                 You can download a PDF version of my detailed resume here:
             </p>
             <!-- Important: Replace 'Resume_Exp_6yrs_Ratnesh_ComputerEngineer_2025.pdf' with the actual filename of your PDF resume -->
-            <a href="Resume_Exp_6yrs_Ratnesh_ComputerEngineer_2025.pdf" download="Ratnesh_Kumar_Kushwaha_Resume.pdf" class="btn-primary inline-block">
+            <a href="Ratnesh_Kumar_Kushwaha_Resume.pdf" download="Ratnesh_Kumar_Kushwaha_Resume.pdf"
+                class="btn-primary inline-block">
                 Download Resume (PDF)
             </a>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="card">
-            <h2 class="section-title text-2xl font-semibold">Contact Me</h2>
-            <p class="text-gray-700 mb-4">
-                Feel free to reach out to me via email or connect with me on social media.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="mailto:ratnesh.kush@yahoo.in" class="btn-primary flex items-center justify-center space-x-2">
-                    <!-- Basic email icon (inline SVG for simplicity) -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                    <span>Email Me</span>
-                </a>
-                <a href="https://www.linkedin.com/in/ratneshkushwaha/" target="_blank" class="btn-primary flex items-center justify-center space-x-2 bg-blue-600 hover:bg-blue-700">
-                    <!-- Basic LinkedIn icon (inline SVG for simplicity) -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                    <span>LinkedIn</span>
-                </a>
-                <a href="https://github.com/imratnesh" target="_blank" class="btn-primary flex items-center justify-center space-x-2 bg-gray-800 hover:bg-gray-900">
-                    <!-- Basic GitHub icon (inline SVG for simplicity) -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 3c-.58-.33-1.41-.67-2.73-.67H16v6z"></path></svg>
-                    <span>GitHub</span>
-                </a>
-                <a href="https://stackoverflow.com/users/2094351/ratnesh-kushwaha" target="_blank" class="btn-primary flex items-center justify-center space-x-2 bg-orange-600 hover:bg-orange-700">
-                    <!-- Basic Stack Overflow icon (inline SVG for simplicity) -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6"></path><path d="M12 20v-8m-4 4h8"></path><circle cx="12" cy="12" r="10"></circle></svg>
-                    <span>Stack Overflow</span>
-                </a>
-                <a href="https://www.kaggle.com/ratnesh88" target="_blank" class="btn-primary flex items-center justify-center space-x-2 bg-blue-800 hover:bg-blue-900">
-                    <!-- Basic Kaggle icon (inline SVG for simplicity) -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10s-2.17-1.44-4-2c-1.83-.56-4-1-6-1-2 0-3.83.44-5.5 1S2 10 2 10"></path><path d="M22 14s-2.17 1.44-4 2c-1.83.56-4 1-6 1-2 0-3.83-.44-5.5-1S2 14 2 14"></path><path d="M22 12s-2.17-1.44-4-2c-1.83-.56-4-1-6-1-2 0-3.83.44-5.5 1S2 12 2 12"></path><circle cx="12" cy="12" r="10"></circle></svg>
-                    <span>Kaggle</span>
-                </a>
-            </div>
-        </section>
+
 
         <!-- Footer Section -->
         <footer class="text-center text-gray-500 text-sm mt-8">
-            <p>&copy; 2025 Ratnesh Kumar Kushwaha. All rights reserved.</p>
+            <p>&copy; 2026 Ratnesh Kumar Kushwaha. All rights reserved.</p>
         </footer>
     </div>
 </body>
+
 </html>
